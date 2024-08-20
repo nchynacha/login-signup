@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/bubbles.png);
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size:800px;
+    background-attachment: fixed;
+    background-color:#603f8b;
+    font-family: "Lilita One", sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 2px; 
+}
+
+a{
+    text-decoration: none;
+    color: #b4fee7;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.wrapper{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login-box, .signup-box
+{
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(30px);
+    border: 1px solid rgb(219, 200, 237);
+    border-radius: 20px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: #ffffff;
+    box-shadow: 10px 10px 20px 2px rgba(112, 237, 220, 0.3);
+    
+}
+
+
+
+
+.signup-header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color:#b4fee7;
+    width: 180px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+
+.login-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color:#b4fee7;
+    width: 160px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+.login-header span {
+    font-size: 30px;
+    color: #603f8b;
+}
+
+.signup-header span {
+    font-size: 30px;
+    color: #603f8b;
+    text-transform: uppercase;
+}
+
+.login-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background-color:#b4fee7;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 #b4fee7;
+}
+
+.signup-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background-color:#b4fee7;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 #b4fee7;
+}
+
+.login-header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right:  -30px;
+    width: 30px;
+    height: 30px;
+    background-color:#b4fee7;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 #b4fee7;
+}
+
+.signup-header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right:  -30px;
+    width: 30px;
+    height: 30px;
+    background-color:#b4fee7;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 #b4fee7;
+}
+
+.input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input-field{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: #ffffff;
+    padding-inline: 20px 50px;
+    border: 1px solid rgb(219, 200, 237);
+    border-radius: 30px;
+    outline: none;
+}
+
+#user {
+    margin-bottom: 10px;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.2s;
+   
+
+}
+
+.input-field:focus ~ .label,
+.input-field:valid ~ .label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color:#603f8b;
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 0 10px;
+
+}
+
+.icon {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.input-submit {
+    width: 100%;
+    height: 50px;
+    background:#b4fee7;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+    color: #603f8b;
+    font-family: "Lilita One", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input-submit:hover{
+    background: #fd49a0;
+    color: #ffffff;
+}
+
+.register {
+    text-align: center;
+    font-weight: 700;
+}
+
+.register a {
+    font-weight: 500;
+}
