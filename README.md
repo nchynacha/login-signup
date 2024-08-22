@@ -18,3 +18,33 @@
   </span>
   
 </p>
+
+# Login & Signup Web App
+
+This is a web application for user authentication built using HTML, CSS, and JavaScript. The app includes features for user registration and login, providing a secure and user-friendly experience.
+
+## Features
+
+- **User Registration**: Allows users to create a new account with email and password.
+- **User Login**: Secure login with email and password authentication.
+
+
+
+
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/login-signup-web-app.git
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd login-signup-web-app
+    ```
+3. **Open the `index.html` file in a web browser**:
+    Simply open the `index.html` file in your preferred web browser to view and test the app.
+
+
